@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_marginRight="16dp"
+        android:id="@+id/ln_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/main_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/main_cameravideo"
+            />
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_camera"
+            android:gravity="center"
+            android:text="Camera" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/ln_camera"
+            android:id="@+id/ln_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/main_library"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/main_camera"
+                android:background="@drawable/main_viewall"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_library"
+                android:layout_toRightOf="@+id/tv_camera"
+                android:gravity="center"
+                android:text="Library" />
+        </LinearLayout></LinearLayout>
+
+</RelativeLayout>
